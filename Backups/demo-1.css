@@ -1,0 +1,174 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html, body { height: 100%; width: 100%; margin: 0px; padding: 0px;}
+
+body { background: #ffffff; overflow: hidden;}
+
+.container { display: flex; flex-direction: row;}
+
+.left { width: 20%; height: 100vh; z-index: 0; background: #fff; display:flex; flex-direction: column; justify-content:space-around; align-items: center;}
+.right { width: 100%; height: 100vh; z-index: 0; overflow-y: scroll; background: #f4f4f4; padding-left: 2%; padding-right: 2%;}
+
+.brand { text-align: center;}
+.brand hr { width: 30%; border-bottom: 4px #333 solid}
+.logo { width: 120px;}
+.content { text-align: center;}
+.radio { width: 40px; margin-top: 16px;}
+h1 { font-size: 20px; font-family: sans-serif; margin-top: 6px; margin-bottom: 6px; text-transform: uppercase;}
+h2 { font-size: 16px; font-family: sans-serif; margin-bottom: 6px; text-transform: uppercase;}
+p { font-size: 13px; font-family: sans-serif;}
+h3 { font-size: 16px; font-family: sans-serif; padding-top: 20px; padding-bottom: 10px;}
+.counter { text-align: center;}
+.counterwrapper { padding: 8px 0 4px 0; border-radius: 4px; border: 1px #cccccc dashed; margin-bottom: 8px;}
+.tags { background: #f4f4f4; }
+
+
+
+
+
+.header { width: 100%; position:fixed; top: 0px; z-index: 1; background: #fff; height: 80px; text-align: center; padding: 10px 0;}
+.header img { width: 120px;}
+
+.footer { width: 100%; position:fixed; bottom: 0px; z-index: 2; background: #fff; height: 80px;}
+
+
+
+.shadow {
+  -webkit-box-shadow: 1px 0px 4px 4px rgba(204, 204, 204, .5);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    1px 0px 4px 4px rgba(204, 204, 204, .5);  /* Firefox 3.5 - 3.6 */
+  box-shadow:         1px 0px 4px 4px rgba(204, 204, 204, .5);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+
+
+#wrapper1 {
+        display: block;
+    padding: 0px;
+    }
+#wrapper2 {
+        display: none;
+    padding: 0px;
+    }
+#wrapper3 {
+        display: none;
+    padding: 0px;
+    }
+
+
+
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+#wrapper1 {
+        display: block;
+    }
+#wrapper2 {
+        display: none;
+    }
+#wrapper3 {
+        display: none;
+    }
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+#wrapper1 {
+        display: none;
+    }
+#wrapper2 {
+        display: block;
+    }
+#wrapper3 {
+        display: none;
+    }
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+#wrapper1 {
+        display: none;
+    }
+#wrapper2 {
+        display: block;
+    }
+#wrapper3 {
+        display: none;
+    }
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+#wrapper1 {
+        display: none;
+    }
+#wrapper2 {
+        display: none;
+    }
+#wrapper3 {
+        display: block;
+    }
+}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+#wrapper1 {
+        display: none;
+    }
+#wrapper2 {
+        display: none;
+    }
+#wrapper3 {
+        display: block;
+    }
+    .d1 {
+        background-image: url(images/comingsoon1d.jpg) no-repeat center center;
+        background-size: contain;
+    }
+}

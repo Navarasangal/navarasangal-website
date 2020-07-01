@@ -1,0 +1,143 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html, body { height: 100%; width: 100%; margin: 0px; padding: 0px;}
+
+body { background: #ffffff;}
+
+.container1 { width: 100%; height: 100vh }
+
+.container2 { width: 100%;}
+
+.signup { width: 100%; position:fixed; bottom: 0px; z-index: 1; background: #ccc; height: 100px;}
+
+#wrapper1 {
+        display: block;
+    padding: 0px;
+    }
+#wrapper2 {
+        display: none;
+    padding: 0px;
+    }
+#wrapper3 {
+        display: none;
+    padding: 0px;
+    }
+
+
+
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+#wrapper1 {
+        display: block;
+    }
+#wrapper2 {
+        display: none;
+    }
+#wrapper3 {
+        display: none;
+    }
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+#wrapper1 {
+        display: none;
+    }
+#wrapper2 {
+        display: block;
+    }
+#wrapper3 {
+        display: none;
+    }
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+#wrapper1 {
+        display: none;
+    }
+#wrapper2 {
+        display: block;
+    }
+#wrapper3 {
+        display: none;
+    }
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+#wrapper1 {
+        display: none;
+    }
+#wrapper2 {
+        display: none;
+    }
+#wrapper3 {
+        display: block;
+    }
+}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+#wrapper1 {
+        display: none;
+    }
+#wrapper2 {
+        display: none;
+    }
+#wrapper3 {
+        display: block;
+    }
+    .d1 {
+        background-image: url(images/comingsoon1d.jpg) no-repeat center center;
+        background-size: contain;
+    }
+}
